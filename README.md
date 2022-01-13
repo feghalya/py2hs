@@ -533,7 +533,7 @@ class MyObject a where
     area :: a -> Float
 ```
 
-What we are are seeing, is a type class, `MyObject`, that declares a behavior (or interface), `area`, 
+What we are seeing, is a type class, `MyObject`, that declares a behavior (or interface), `area`, 
 which returns a Float when a type of `MyObject` is given. Notice that the `class` in Haskell is not the same as the 
 "class" in Python. Instead, it is more similar to an abstract class in Python.
 
@@ -551,7 +551,7 @@ instance MyObject Shape where
 
 A new Haskell keyword, `instance`, is used here. `instance` declares that a data type is to implement all 
 "interfaces" defined in a type class. In our case, `instance MyObject Shape` could be read as `MyObject` will implement 
-all functions declared in type cass `Shape`. In Python, it will look something like this `class MyObject(Shape):`.
+all functions declared in type class `Shape`. In Python, it will look something like this `class MyObject(Shape):`.
 
 ```haskell
 λ> let a = Square 4
